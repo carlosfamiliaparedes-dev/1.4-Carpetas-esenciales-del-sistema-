@@ -1,0 +1,7 @@
+nano: editor de texto sencillo e intuitivo para crear y modificar archivos
+vi: editor de texto clásico con modo comando y modo inserción
+vim: versión mejorada de vi, con resaltado de sintaxis y funciones avanzadas
+cat: muestra el contenido completo de un archivo
+tac: muestra el contenido de un archivo en orden inverso
+wc: cuenta líneas, palabras y caracteres de un archivo
+grep: busca texto dentro de archivos
