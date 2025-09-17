@@ -1,10 +1,88 @@
-/bin: contiene los comandos básicos del sistema necesarios para todos los usuarios.
-/etc: archivos de configuración del sistema y servicios.
-/dev: archivos que representan dispositivos de hardware (discos, USB, etc.).
-/var: datos variables como logs, cachés, correos y colas de impresión.
-/tmp: archivos temporales creados por usuarios o programas.
-/lib: bibliotecas y módulos del kernel necesarias para ejecutar comandos básicos.
-/home: directorios personales de cada usuario.
-/root: directorio personal del usuario root (administrador).
-/boot: archivos esenciales para el arranque del sistema, kernel y gestor de arranque.
-/opt: programas y paquetes opcionales instalados manualmente.
+/bin
+
+Descripción: Contiene los comandos binarios esenciales para todos los usuarios, como ls, cp, mv, cat.
+
+Ejemplo práctico:
+
+ls /bin
+which ls
+
+2. /etc
+
+Descripción: Almacena archivos de configuración del sistema y servicios.
+
+Ejemplo práctico:
+
+ls /etc
+cat /etc/passwd  # Muestra los usuarios del sistema
+
+3. /dev
+
+Descripción: Contiene los archivos de dispositivos del sistema (hardware y periféricos).
+
+Ejemplo práctico:
+
+ls /dev
+ls /dev/sd*  # Muestra discos y particiones
+
+4. /var
+
+Descripción: Archivos que cambian con frecuencia, como logs, colas de impresión y bases de datos temporales.
+
+Ejemplo práctico:
+
+ls /var/log
+tail /var/log/syslog  # Muestra los últimos registros del sistema
+
+5. /tmp
+
+Descripción: Carpeta para archivos temporales, se limpia al reiniciar el sistema.
+
+Ejemplo práctico:
+
+touch /tmp/archivo_temp.txt
+ls /tmp
+
+6. /lib
+
+Descripción: Librerías esenciales para que funcionen los programas del sistema.
+
+Ejemplo práctico:
+
+ls /lib
+ldd /bin/ls  # Muestra las librerías que usa el comando ls
+
+7. /home
+
+Descripción: Directorios personales de los usuarios normales.
+
+Ejemplo práctico:
+
+ls /home
+cd /home/usuario
+
+8. /root
+
+Descripción: Directorio personal del usuario root (administrador del sistema).
+
+Ejemplo práctico:
+
+sudo ls /root
+cd /root
+
+9. /boot
+
+Descripción: Contiene los archivos necesarios para iniciar el sistema, como el kernel y el gestor de arranque.
+
+Ejemplo práctico:
+
+ls /boot
+cat /boot/grub/grub.cfg
+
+10. /opt
+
+Descripción: Paquetes y aplicaciones de terceros opcionales.
+
+Ejemplo práctico:
+
+ls /opt
