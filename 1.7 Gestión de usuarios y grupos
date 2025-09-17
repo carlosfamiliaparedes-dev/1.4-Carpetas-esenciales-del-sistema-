@@ -1,0 +1,51 @@
+1️⃣ Crear usuario
+
+Comando para añadir un nuevo usuario al sistema.
+
+sudo adduser juan
+
+2️⃣ Crear grupos
+
+Comando para crear un grupo nuevo en el sistema.
+
+sudo groupadd soporte
+
+3️⃣ Añadir usuarios a grupos creados
+
+Permite asignar un usuario a un grupo existente, otorgándole permisos asociados al grupo.
+
+sudo usermod -aG soporte juan
+
+4️⃣ Añadir usuario al grupo de sudo
+
+Otorga privilegios de administrador a un usuario, permitiéndole ejecutar comandos con sudo.
+
+sudo usermod -aG sudo juan
+
+5️⃣ Eliminar grupos
+
+Borra un grupo del sistema (no elimina los usuarios que pertenecen al grupo).
+
+sudo groupdel soporte
+
+6️⃣ Eliminar usuarios
+
+Elimina un usuario del sistema y opcionalmente su directorio personal.
+
+sudo deluser juan
+sudo deluser --remove-home juan  # elimina usuario y su carpeta personal
+
+Mini práctica sugerida
+# Crear usuario y grupo
+sudo adduser maria
+sudo groupadd desarrollo
+
+# Añadir usuario a grupo
+sudo usermod -aG desarrollo maria
+
+# Dar permisos de sudo
+sudo usermod -aG sudo maria
+
+# Eliminar usuario y grupo
+sudo deluser --remove-home maria
+sudo groupdel desarrollo
