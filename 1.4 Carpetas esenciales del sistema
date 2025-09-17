@@ -1,0 +1,10 @@
+/bin: contiene los comandos básicos del sistema necesarios para todos los usuarios.
+/etc: archivos de configuración del sistema y servicios.
+/dev: archivos que representan dispositivos de hardware (discos, USB, etc.).
+/var: datos variables como logs, cachés, correos y colas de impresión.
+/tmp: archivos temporales creados por usuarios o programas.
+/lib: bibliotecas y módulos del kernel necesarias para ejecutar comandos básicos.
+/home: directorios personales de cada usuario.
+/root: directorio personal del usuario root (administrador).
+/boot: archivos esenciales para el arranque del sistema, kernel y gestor de arranque.
+/opt: programas y paquetes opcionales instalados manualmente.
