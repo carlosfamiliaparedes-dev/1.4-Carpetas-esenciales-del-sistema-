@@ -1,0 +1,9 @@
+ifconfig: muestra información de las interfaces de red, incluyendo IP y máscara
+ip addr: muestra información detallada de las interfaces de red
+sudo ifconfig [interfaz] [IP] netmask [máscara] up: asigna IP y máscara temporal a una interfaz
+sudo nmtui: abre interfaz de texto interactiva para configurar red, IP, máscara, gateway y DNS
+nmcli con show: muestra las conexiones de red existentes
+nmcli con mod [conexión] ipv4.addresses [IP/máscara]: cambia IP de una conexión usando nmcli
+nmcli con up [conexión]: activa la conexión modificada con nmcli
+/etc/netplan/*.yaml: archivo de configuración de red en Ubuntu Server moderno (editar para cambiar IP, máscara, gateway y DNS)
+sudo netplan apply: aplica los cambios realizados en netplan
